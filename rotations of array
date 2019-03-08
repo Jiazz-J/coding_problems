@@ -1,0 +1,6 @@
+for right rotations 
+  arr([i+length-rotation]%n)
+  
+  
+for left rotations
+  arr[(i-d)%n]
