@@ -1,0 +1,40 @@
+/*package whatever //do not write package name here */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		//code
+		Scanner sc = new Scanner(System.in);
+		int test= sc.nextInt();
+		while(test-->0){
+		    int size=sc.nextInt();
+		    int[] arr=new int[size];
+		    for(int i=0; i<size; i++){
+		        arr[i]=sc.nextInt();
+		    }
+		    int diff=0;
+		    for(int j=0; j<size; j++){
+		        for(int k=0; k<size; k++){
+		            if (j==k)
+		            continue;
+		            diff+=getDiff(arr[k]^arr[j]);
+		        }
+		    }
+		    System.out.println(diff);
+		}
+	}
+	public static int getDiff(int val){
+	    int a,count=0;
+	    while(val>0){
+	        a=val%2;
+	        if(a==1){
+	            count++;
+	        }
+	        val/=2;
+	    }
+	    return count;
+	}
+}
