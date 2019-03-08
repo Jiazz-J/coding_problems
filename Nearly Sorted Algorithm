@@ -1,0 +1,53 @@
+/*package whatever //do not write package name here */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		//code
+		/*package whatever //do not write package name here */
+
+
+		//code
+		Scanner sc = new Scanner(System.in);
+		int test= sc.nextInt();
+		while(test-->0){
+		    //int size=sc.nextInt();
+		    int[] det=new int[2];
+		    for(int k=0;k<2;k++){
+		        det[k]=sc.nextInt();
+		    }
+		    int[] arr=new int[det[0]];
+		    int temp=0;
+		    for(int i=0; i<det[0]; i++){
+		        arr[i]=sc.nextInt();
+		        if (i>0){
+		            for(int j=0;j<i; j++){
+		                if (arr[i]<arr[j]){
+		                temp=arr[i];
+		                arr[i]=arr[j];
+		                arr[j]=temp;
+		                }
+		                
+		            }
+		        }
+		    }
+		    //System.out.println(Arrays.asList(arr));
+		  /*  for(int l=0;l<arr.length;l++){
+		        System.out.println(arr[l]+" ");
+		    } */
+		    int m=0,count=0;
+		    while(m<det[0]){
+		        System.out.print(arr[m]+" ");
+		        m++;
+		        count++;
+		       // if(m<=det[0]){
+		         //   break;
+		       // }
+		    } 
+		    System.out.println();
+	}
+	}
+}
