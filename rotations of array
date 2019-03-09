@@ -3,4 +3,4 @@ for left rotations
   
   
 for right rotations
-  arr[(i-d)%n]
+  arr[(i+rotation)%n]
