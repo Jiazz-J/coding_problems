@@ -1,1 +1,6 @@
-1.There is no need to modify the data just print it. Ex: alternate node
+  1.There is no need to modify the data just print it. Ex: alternate node
+
+  2.convert a char to int:
+  
+        char x = '9';
+      int y = x - '0'; // gives the int value 9
